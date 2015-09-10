@@ -1,0 +1,57 @@
+<div class="inbox">
+
+  <div class="search-bar">
+    <div class="inbox__count">
+      We are in all {{ inbox.messages.length && inbox.messages.length || 'no' }} passionate entrepreneurs 
+    </div>
+    <div ng-hide="!inbox.messages.length">
+      <input type="text" class="inbox__search" 
+        ng-model="inbox.search" placeholder="Search by 'Name', e.g. Jalaj Khajotia">
+    </div>
+
+  </div>
+  <div id="my-popup" class="mfp-hide white-popup">
+
+</div>
+  <ul class="grid cs-style-4  ">
+    <li ng-show="!inbox.messages.length" class="no-emails">
+      No messages! Try sending one to a friend.
+    </li>
+    <li ng-repeat="message in inbox.messages | filter:{ name: inbox.search }">
+      <figure>
+       <a ng-href="{{message.path}}" class="without-caption image-link">
+            <img class="open-popup images" ng-click="inbox.zoomImage()" ng-src="{{ message.path }}" />             
+          </a>
+        
+          <h3 class="name">{{message.name}}</h3>
+                        <figcaption>
+                          <h3>{{message.name}}</h3>
+                          <h4>{{message.startup}}</h4>
+                         <h4 class="expertise">Expertise: </h4>  <h5>{{message.expertise}} </h5>
+                          <h4 class="expertise">Mobile: </h4> <h4>{{message.mobile}}</h4>
+
+                         <a href="pics/back.jpg" class="without-caption image-link">
+            <img class="open-popup images" class="test" ng-click="inbox.callMe()" src="pics/back.jpg" style="display:none" />    
+               View details         
+          </a>   
+             
+            </figcaption>
+          </figure>
+      <!-- <div class="inbox__list-info">       
+       
+       <p class="inbox__list-from"> From: {{ message.from }} </p>
+        <p class="inbox__list-date"> {{ message.date | date: 'dd/MM/yyyy' }} </p>
+        <p class="inbox__list-subject"> {{ message.subject }} </p>
+     
+      </div> --> 
+      <div class="inbox__list-actions">
+        <a style="  margin-left: inherit;" ng-href="{{ message.path }}">
+          More Info
+        </a><!--
+        <a href="" ng-click="inbox.deleteMessage(id, $index);">
+          Delete
+        </a>-->
+      </div>
+    </li>
+  </ul>
+</div>
