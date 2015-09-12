@@ -23,20 +23,28 @@
             <img class="open-popup images" ng-click="inbox.zoomImage()" ng-src="{{ message.path }}" />             
           </a>
         
-          <h3 class="name">{{message.name}}</h3>
+          <h3 class="name">{{message.name}}- {{message.startup}}</h3>
                         <figcaption>
-                          <h3>{{message.name}}</h3>
+                          <h3></h3>
                           <h4>{{message.startup}}</h4>
                          <h4 class="expertise">Expertise: </h4>  <h5>{{message.expertise}} </h5>
                           <h4 class="expertise">Mobile: </h4> <h4>{{message.mobile}}</h4>
 
-                         <a href="pics/back.jpg" class="without-caption image-link">
+                       <!--   <a href="pics/back.jpg" class="without-caption image-link">
+                         
             <img class="open-popup images" class="test" ng-click="inbox.callMe()" src="pics/back.jpg" style="display:none" />    
                View details         
-          </a>   
-             
+          </a> 
+-->
             </figcaption>
           </figure>
+            <br/>
+          <!-- <a class="fancybox" href="#inline1" title="{{message.startup}}" ng-click="inbox.callbaby(message.intro);">Inline</a>  
+
+ <a style="  margin-left: inherit;" ng-href="{{ message.path }}">
+          More Info
+        </a>
+        -->
       <!-- <div class="inbox__list-info">       
        
        <p class="inbox__list-from"> From: {{ message.from }} </p>
@@ -45,9 +53,8 @@
      
       </div> --> 
       <div class="inbox__list-actions">
-        <a style="  margin-left: inherit;" ng-href="{{ message.path }}">
-          More Info
-        </a><!--
+        <a class="fancybox" style="margin-left: inherit;height: auto;" href="#inline1" title="{{message.startup}}" ng-click="inbox.callbaby(message.startup,message.intro);">More Info</a>  
+        <!--
         <a href="" ng-click="inbox.deleteMessage(id, $index);">
           Delete
         </a>-->

@@ -57,6 +57,23 @@ $('.without-caption').magnificPopup({
     }
   });  
          }
+                 this.callbaby = function(name,source){
+                //  setInterval(function () { console.log("before");}, 1000);
+              console.log(source);
+              var content = '<strong><p>'+name+'</p></strong><p>'+source +'</p>';
+              $('#inline1').empty();
+ $('#inline1').append(content);
+ $('a').fancybox({
+  padding: 0,
+  helpers: {
+    overlay: {
+      locked: false
+    }
+  }
+});
+            $('.fancybox').fancybox();
+
+         }
 
         this.deleteMessage = function (id, index) {
           InboxFactory.deleteMessage(id, index);
