@@ -15,6 +15,10 @@ angular.module('EmailApp', [
       templateUrl: 'views/email.html',
       controller: 'EmailCtrl',
       controllerAs: 'email'
+    }).when('/form',{
+      templateUrl: 'views/email.html',
+      controller: 'EmailCtrl',
+      controllerAs: 'email'
     })
     .otherwise({
       redirectTo: '/inbox'

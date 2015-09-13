@@ -6,5 +6,5 @@ angular.module('EmailApp')
     function EmailCtrl ( ) {
       'use strict';
       
-      this.title = "Loading...";
+      this.title = "Home";
     });

@@ -3,12 +3,13 @@
     <p class="email__list-from"> {{ email.message.from }} </p>
     <p class="email__list-date"> {{ email.message.date | date: 'dd/MM/yyyy' }} </p>
     <p class="email__list-subject"> {{ email.message.subject }} </p>
-    <a href="" ng-click="reply = !reply;" class="email__reply">
+    <iframe src="https://docs.google.com/forms/d/1NNs7OV447uYNteGq0Se0lNiY44MGqg-S_d7XrsMHGFU/viewform?embedded=true" width="760" height="1500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+   <!-- <a href="" ng-click="reply = !reply;" class="email__reply">
       Reply
     </a>
     <a ng-href="/#/inbox" class="email__back">
       Back
-    </a>
+    </a> -->
   </div>
   <div class="email__content" ng-bind-html="email.message.content"></div>
   <div class="email__response" ng-show="reply">
