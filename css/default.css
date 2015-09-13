@@ -14,7 +14,7 @@
 
 .images
 {
-	width: 60%;
+	width: 70%;
 }
 .details{
  
@@ -160,7 +160,7 @@ a:active {
 		display: none;
 	}
 
-	.open-popup {padding:20px}
+	.open-popup {padding:0px}
 .white-popup {
   position: relative;
   background: #FFF;

@@ -1,15 +1,5 @@
 [
   {
-    "name": "Vivek chava",
-    "path" : "pics/vivek.jpg",
-    "intro": "Rentnirvana , an online rental marketplace for all your temporary needs. Rent cars,bikes,motorcycles, electronics, furniture, household more all at one place .Rent anything ,anytime !",
-    "startup": "Rentnirvana",
-    "mobile": "8143600983",
-     "email": "vivekchava3@gmail.com",
-     "education":"Engineering 3rd year (present) at VNR VIGNANA JYOTHI",
-     "expertise": "Just exploring and learning, good at software development but love to learn business management ."
-  },
-  {
     "name": "Manish Agarwal",
       "path" : "pics/manish.jpg",
     "intro": "Just Kapture prints & delivers photos to users, free of cost. The photo prints are free, because there are advertisements behind the photos. This allows us to make the premium quality photo prints, and deliver it to our users, for no cost. JustKapture.com prides itself on providing non-intrusive and highly innovative, targeted advertising. Launched on 1st March 2015, it has about 2800 users in the city, who have registered and placed orders for over 10K photo prints on the website.",
@@ -31,13 +21,22 @@
   },
   {
     "name": "TRINADH M",
-      "path" : "pics/np.jpg",
+      "path" : "pics/tri.jpg",
     "intro": "DESIGNING SOLUTION FOR CORPORATE AND E-COMMERCE",
     "startup": "LOOKTRIX",
     "mobile": "8143261354",
      "email": "trinadh.vasu@gmail.com",
      "education":"MULTIMEDIA (graphic designing)",
      "expertise": "GRAPHIC DESIGNING"
+  },{
+    "name": "Vivek chava",
+    "path" : "pics/vivek.jpg",
+    "intro": "Rentnirvana , an online rental marketplace for all your temporary needs. Rent cars,bikes,motorcycles, electronics, furniture, household more all at one place .Rent anything ,anytime !",
+    "startup": "Rentnirvana",
+    "mobile": "8143600983",
+     "email": "vivekchava3@gmail.com",
+     "education":"Engineering 3rd year (present) at VNR VIGNANA JYOTHI",
+     "expertise": " software development, business management."
   },    
   {
     "name": "manoj gudala",
@@ -47,7 +46,7 @@
     "mobile": "8522038994",
      "email": "mgoud311@gmail.com",
      "education":"Btech-sri indu college of eng&tech",
-     "expertise": "Coding, marketing,.managing people, networking, painting, designing."
+     "expertise": "Coding, marketing, managing people, networking, painting, designing."
   },
   {
     "name": "Shabbar syed",
@@ -60,8 +59,18 @@
      "expertise": "Ideas, Strategy and Innovations in small business!"
   },
   {
+    "name": "Sai Kiran Singanamala",
+      "path" : "pics/sai.jpg",
+    "intro": "SmartLoyal - Loyalty Application rewarding customer based on the number of visits rather than the traditional reward points" ,
+    "startup": "SmartLoyal",
+    "mobile": "9000046661",
+     "email": "sai.singanamala@smartloyal.in",
+     "education":"Strathclyde Business School - Master of Business and Management",
+     "expertise": "Marketing, Business Development, Operations"
+  },
+  {
     "name": "Kranthi Kumar",
-      "path" : "pics/np.jpg",
+      "path" : "pics/np1.jpg",
     "intro": "Say Hello! to Migrera, An innovative startup in the moving industry that takes care of everything for you. Migrera will take care of all the dirty work so that you have peace of mind and can concentrate on the more important things in life. Choose from our trusted network of packers and movers, view their ratings, prices and leave the rest to us. Have a single point of contact through the whole process. We're reachable via email, phone and social media. Any troubles - just reach out to us and we'll get on top of it. Happy Moving!",
     "startup": "Migrera",
     "mobile": "9177987488",
@@ -188,16 +197,6 @@
      "email": "rohithhdt@gmail.com",
      "education":"B.Tech(pursuing)",
      "expertise": "marketing,presentation skills,communication."
-  },
-  {
-    "name": "Sai Kiran Singanamala",
-      "path" : "pics/np.jpg",
-    "intro": "SmartLoyal - Loyalty Application rewarding customer based on the number of visits rather than the traditional reward points" ,
-    "startup": "SmartLoyal",
-    "mobile": "9000046661",
-     "email": "sai.singanamala@smartloyal.in",
-     "education":"Strathclyde Business School - Master of Business and Management",
-     "expertise": "Marketing, Business Development, Operations"
   },
   {
     "name": "Swapnil Itankar",

@@ -15,6 +15,15 @@ angular.module('EmailApp')
       controller: function (InboxFactory) {
         this.messages = [];
 
+        var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+
+function preventDefault(e) {
+  e = e || window.event;
+  if (e.preventDefault)
+      e.preventDefault();
+  e.returnValue = false;  
+}
+
         this.goToMessage = function (id) {
           InboxFactory.goToMessage(id);
         };
@@ -60,18 +69,39 @@ $('.without-caption').magnificPopup({
                  this.callbaby = function(name,source){
                 //  setInterval(function () { console.log("before");}, 1000);
               console.log(source);
-              var content = '<strong><p>'+name+'</p></strong><p>'+source +'</p>';
+              var content = '<strong><p style="text-transform: capitalize;">'+name+'</p></strong>';
+
+             
+              var indices = [];indices.push(0);
+              for(var i=0; i<source.length;i++) {
+                  if (source[i] === ".") indices.push(i);
+              }
+              console.log(indices.length);
+             
+              if(indices.length > 3)
+              {
+                for(var i=2;i<indices.length;i=i+2)
+                {     if(i==2)
+                  {
+                       content +='<p>'+ source.substring(indices[i-2], indices[i]+1) +'</p><br/>';                
+                  }
+                  else{
+                     content +='<p>'+ source.substring(indices[i-2]+1, indices[i]+1) +'</p>'; 
+                  } 
+                }               
+              //  content +='<p>'+ source.substring(0, indices[2]+1) +'</p>'; 
+               // content +='<p>'+ source.substring( indices[2]+1,source.length) +'</p>'; 
+              }
+              else{
+               content+='<p>'+source +'</p>'; 
+              }
+
               $('#inline1').empty();
  $('#inline1').append(content);
- $('a').fancybox({
-  padding: 0,
-  helpers: {
-    overlay: {
-      locked: false
-    }
-  }
-});
-            $('.fancybox').fancybox();
+ preventDefault();
+
+          $('.fancybox').fancybox();;
+       
 
          }
 
@@ -93,4 +123,9 @@ $('.without-caption').magnificPopup({
         */
       }
     }
-  });
+  }).
+  filter('capitalize', function() {
+    return function(input, all) {
+      return (!!input) ? input.replace(/([^\W_]+[^\s-]*) */g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();}) : '';
+    }
+  });;

@@ -7,5 +7,5 @@ angular.module('EmailApp')
       'use strict';
 
       this.title = "List View";
-      this.option2="Tile View"
+      //this.option2="Tile View";
     });
